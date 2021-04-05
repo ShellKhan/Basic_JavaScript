@@ -1,0 +1,89 @@
+@font-face {
+	font-family: 'Roboto';
+	src: url('homework5.woff2');
+}
+/* common reset */
+html, body, div, span, label, h1, h2, h3, h4, h5, h6, p, a, img, dl, dt, dd, ol, ul, li, button, table, tbody, tr, th, td, form, fieldset, article, aside, footer, header, nav, section, input, select, option, textarea {
+	padding: 0;
+	margin: 0;
+	border: none;
+	outline: none;
+	background: none;
+	border-collapse: collapse;
+	list-style: none;
+	font-family: inherit;
+	font-size: inherit;
+	line-height: inherit;
+}
+/* common styles */
+body {
+	font: 16px 'Roboto';
+	color: #000;
+	background: #0ff;
+}
+section {
+	max-width: 1200px;
+	margin: 20px auto;
+	padding: 20px;
+	text-align: center;
+	background: #fff;
+}
+h1 {
+	font-size: 32px;
+}
+p {
+	margin: 8px 0;
+}
+.example {
+	border: 2px solid #077;
+	padding: 8px;
+}
+.example + button {
+	color: #fff;
+	background: #070;
+	width: 90px;
+	height: 30px;
+	font-size: 20px;
+	margin-top: 10px;
+	cursor: pointer;
+	border-radius: 10px;
+	box-shadow: 0 1px 5px rgba(0,0,0,0.5);
+}
+.example + button:hover {
+	box-shadow: none;
+}
+/* chess */
+#chess > table {
+	margin: 10px auto;
+}
+#chess td {
+	border: 1px solid #000;
+	font-size: 32px;
+	cursor: pointer;
+}
+#chess td, #chess th {
+	width: 50px;
+	height: 50px;
+	text-align: center;
+	vertical-align: middle;
+	color: #000;
+}
+#chess tr:nth-child(odd) td:nth-child(odd),
+#chess tr:nth-child(even) td:nth-child(even) {
+	background: #fff;
+}
+#chess tr:nth-child(odd) td:nth-child(even),
+#chess tr:nth-child(even) td:nth-child(odd) {
+	background: #aaa;
+}
+/* catalog */
+dl {
+	display: inline-block;
+	border: 1px solid #070;
+	margin: 10px;
+	padding: 10px;
+}
+dd {
+	float: left;
+	text-decoration: underline;
+}
