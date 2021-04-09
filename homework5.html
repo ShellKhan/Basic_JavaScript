@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>HOMEWORK 5</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap" rel="stylesheet">
+    <link type="text/css" rel="stylesheet" href="homework5.css">
+    <script src="homework5.js" async></script>
+</head>
+<body>
+    <section>
+        <h1>Задачи 1 и 2</h1>
+        <p>Создать функцию, генерирующую шахматную доску. При этом можно использовать любые html-теги по своему желанию. Доска должна быть разлинована соответствующим образом, т.е. чередовать черные и белые ячейки. Строки должны нумероваться числами от 1 до 8, столбцы – латинскими буквами A, B, C, D, E, F, G, H.</p>
+        <p>Заполнить созданную таблицу буквами, отвечающими за шахматную фигуру, например К – король, Ф – ферзь и т.п.</p>
+        <div class="example" id="chess"></div>
+        <button type="button" onclick="makeChess();">RUN!</button>
+    </section>
+    <section>
+        <h1>Задача 3</h1>
+        <p>Сделать генерацию корзины динамической: верстка корзины не должна находиться в HTML-структуре. Там должен быть только div, в который будет вставляться корзина, сгенерированная на базе JS:</p>
+        <p>Пустая корзина должна выводить строку «Корзина пуста»;</p>
+        <div class="example" id="emptybasket"></div>
+        <button type="button" onclick="makeBasket('emptybasket', '');">RUN!</button>
+        <p>Наполненная должна выводить «В корзине: n товаров на сумму m рублей».</p>
+        <div class="example" id="fullbasket"></div>
+        <button type="button" onclick='makeBasket("fullbasket", "[{\"id_product\":1,\"product_name\":\"Сапог\",\"price\":300,\"quantity\":2},{\"id_product\": 2, \"product_name\": \"Башмак\", \"price\": 150, \"quantity\": 4},{\"id_product\": 3, \"product_name\": \"Туфля\", \"price\": 500, \"quantity\": 1}]");'>RUN!</button>
+    </section>
+    <section>
+        <h1>Задача 4</h1>
+        <p>Сделать так, чтобы товары в каталоге выводились при помощи JS:</p>
+        <p>Создать массив товаров (сущность Product);</p>
+        <p>При загрузке страницы на базе данного массива генерировать вывод из него. HTML-код должен содержать только div id=”catalog” без вложенного кода. Весь вид каталога генерируется JS.</p>
+        <div class="example" id="catalog"></div>
+        <button type="button" onclick="showGoods();">RUN!</button>
+    </section>
+</body>
+</html>
