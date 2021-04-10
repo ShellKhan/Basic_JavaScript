@@ -111,9 +111,9 @@ function makeChess() {
 const basket = {
     goods: [],
     addGoods(products) {
-        for (product of products) {
+        for (const product of products) {
             let addflag = true;
-            for (good of this.goods) {
+            for (const good of this.goods) {
                 if (good.id_product == product.id_product) {
                     good.quantity += product.quantity;
                     addflag = false;
