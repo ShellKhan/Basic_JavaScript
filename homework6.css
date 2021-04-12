@@ -1,0 +1,61 @@
+/* common reset */
+html, body, div, span, label, h1, h2, h3, h4, h5, h6, p, a, img, dl, dt, dd, ol, ul, li, button, table, tbody, tr, th, td, form, fieldset, article, aside, footer, header, nav, section, input, select, option, textarea {
+	padding: 0;
+	margin: 0;
+	border: none;
+	outline: none;
+	background: none;
+	border-collapse: collapse;
+	list-style: none;
+	font-family: inherit;
+	font-size: inherit;
+	line-height: inherit;
+}
+/* common styles */
+body {
+	font: 16px sans-serif;
+	color: #000;
+	background: #0ff;
+}
+section {
+	max-width: 1200px;
+	margin: 20px auto;
+	padding: 20px;
+	text-align: center;
+	background: #fff;
+}
+button {
+	padding: 10px;
+	border-radius: 10px;
+	color: #fff;
+	cursor: pointer;
+}
+h1 {
+	font-size: 32px;
+}
+p {
+	margin: 8px 0;
+}
+.example {
+	border: 2px solid #077;
+	padding: 8px;
+}
+.cart-btn {
+	background: #f77;
+}
+dl {
+	display: inline-block;
+	width: 200px;
+	border: 1px solid #070;
+	margin: 10px;
+	padding: 10px;
+}
+dd {
+	float: left;
+	font-weight: bold;
+	margin-right: 10px;
+}
+.buy {
+	background: #070;
+	margin: 5px auto;
+}
